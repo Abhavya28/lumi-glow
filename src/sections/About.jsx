@@ -30,7 +30,7 @@ const highlights = [
 
 const About = () => {
   return (
-    <section className="text-foreground bg-white">
+    <section id="about" className="text-foreground bg-white">
       {/* Hero */}
       <div className="container mx-auto px-6 pt-20 pb-20 items-center flex flex-col">
         <div className="space-y-4 animate-fade-in pb-10 flex flex-col items-center">

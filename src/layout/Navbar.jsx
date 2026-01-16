@@ -1,30 +1,32 @@
 import { useEffect, useState } from "react";
 import Button from "../components/Button";
-import { Menu, X } from "lucide-react";
+import { Menu, User, X } from "lucide-react";
 
 const navLinks = [
-  { href: "#home", label: "Home" },
+  { href: "#hero", label: "Home" },
   { href: "#about", label: "About" },
   { href: "#products", label: "Products" },
-  { href: "#testimonial", label: "Testimonials" },
 ];
 
 const Navbar = () => {
   const [isMobileMenuOpen, setisMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
-  useEffect(()=>{
+  useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
-    }
-    window.addEventListener("scroll",handleScroll);
+    };
+    window.addEventListener("scroll", handleScroll);
 
-    return () => window.removeEventListener("scroll",handleScroll);
-
-  },[]);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <header className={`fixed top-0 right-0 left-0 transition-all duration-500 ${isScrolled ? "glass-strong py-3" : "bg-transparent py-5"}  z-50`}>
+    <header
+      className={`fixed top-0 right-0 left-0 transition-all duration-500 ${
+        isScrolled ? "glass-strong py-3" : "bg-transparent py-5"
+      }  z-50`}
+    >
       <nav className="container mx-auto px-6 flex items-center justify-between">
         <a
           href="#"
@@ -50,11 +52,17 @@ const Navbar = () => {
 
         {/* CTA Button */}
         <div className="hidden md:block">
-          <Button size="sm">Contact Me</Button>
+          <Button size="sm">
+            <User className="w-5 h-5"/>
+            Login
+          </Button>
         </div>
 
         {/* Mobile Menu Button*/}
-        <button className="md:hidden p-2 text-foreground cursor-pointer" onClick={()=>setisMobileMenuOpen(((prev)=> !prev))}>
+        <button
+          className="md:hidden p-2 text-foreground cursor-pointer"
+          onClick={() => setisMobileMenuOpen((prev) => !prev)}
+        >
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </nav>
@@ -67,14 +75,17 @@ const Navbar = () => {
               <a
                 href={link.href}
                 key={index}
-                onClick={()=>setisMobileMenuOpen(false)}
+                onClick={() => setisMobileMenuOpen(false)}
                 className="text-lg text-muted-foreground hover:text-foreground py-2"
               >
                 {link.label}
               </a>
             ))}
 
-            <Button onClick={()=>setisMobileMenuOpen(false)}>Contact Us</Button>
+            <Button onClick={() => setisMobileMenuOpen(false)}>
+                <User className="w-5 h-5"/>
+                Login
+            </Button>
           </div>
         </div>
       )}
