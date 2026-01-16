@@ -31,7 +31,7 @@
   }
 
   body {
-    background-color: var(--color-background);
+    background-color: #d4ecf2;
     color: var(--color-foreground);
     font-family: "Inter", sans-serif;
   }

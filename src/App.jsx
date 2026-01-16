@@ -14,7 +14,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
+    <div className="bg-[#d4ecf2] min-h-screen">
       <Navbar />
       <Hero />
       <About />
@@ -22,7 +22,7 @@ function App() {
       <Testimonial />
       <EmailSubscription />
       <Footer />
-    </>
+    </div>
   )
 }
 
