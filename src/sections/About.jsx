@@ -32,9 +32,9 @@ const About = () => {
   return (
     <section id="about" className="text-foreground bg-white">
       {/* Hero */}
-      <div className="container mx-auto px-6 pt-20 pb-20 items-center flex flex-col">
+      <div className="container mx-auto px-6 items-center flex flex-col">
         <div className="space-y-4 animate-fade-in pb-10 flex flex-col items-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary hover:text-primary/90">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground hover:text-primary-foreground/90">
             About LumiGlow
           </h1>
           <p className="text-muted-foreground leading-relaxed">
@@ -52,7 +52,7 @@ const About = () => {
           {highlights.map((item, idx) => (
             <div
               key={idx}
-              className="glass p-6 rounded-2xl animate-fade-in hover:border-primary hover:bg-primary/5 transition-all duration-800 max-w-xs mx-auto"
+              className="glass p-6 rounded-2xl animate-fade-in flex flex-col items-center transition-all duration-200 max-w-xs mx-auto border-none"
               style={{ animationDelay: `${(idx + 1) * 200}ms` }}
             >
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 hover:bg-primary/20">

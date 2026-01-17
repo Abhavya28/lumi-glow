@@ -7,7 +7,7 @@
   --color-surface: #FFF1F0;
 
   --color-primary: #4d91a5;
-  --color-primary-foreground: #FFFFFF;
+  --color-primary-foreground: black;
 
   --color-secondary: #FFEFE9;
   --color-secondary-foreground: #2E2E2E;
@@ -31,7 +31,7 @@
   }
 
   body {
-    background-color: #d4ecf2;
+    background-color: white;
     color: var(--color-foreground);
     font-family: "Inter", sans-serif;
   }

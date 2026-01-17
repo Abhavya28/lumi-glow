@@ -1,5 +1,11 @@
 import React, { useState } from "react";
-import { Heart } from "lucide-react";
+import {
+  ArrowBigLeft,
+  ArrowBigRight,
+  ArrowBigRightDash,
+  Heart,
+  ShoppingCart,
+} from "lucide-react";
 import Button from "@/components/Button";
 
 const featuredProducts = [
@@ -34,15 +40,15 @@ const Products = () => {
 
   const toggleLike = (id) => {
     setLiked((prev) =>
-      prev.includes(id) ? prev.filter((item) => item !== id) : [...prev, id]
+      prev.includes(id) ? prev.filter((item) => item !== id) : [...prev, id],
     );
   };
 
   return (
-    <section id="products" className="bg-[#d4ecf2] py-20">
-      <div className="container mx-auto px-6">
-        <h2 className="text-3xl md:text-4xl font-bold text-slate-800 text-center mb-12">
-          Featured Products
+    <section id="products" className="bg-white">
+      <div className="container mx-auto px-6 animate-fade-in flex flex-col items-center">
+        <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground text-center mb-12 hover:text-primary-foreground/90">
+          Our Top Sellers
         </h2>
 
         <div className="relative max-w-7xl mx-auto">
@@ -76,13 +82,14 @@ const Products = () => {
                   <h3 className="text-lg md:text-xl font-semibold text-slate-800 mb-2 text-center">
                     {product.name}
                   </h3>
-                
+
                   <p className="text-slate-700 font-medium mb-4 text-center">
                     ₹{product.price}
                   </p>
-    
-                  <Button className="px-8 py-2 text-lg font-semibold bg-primary text-white hover:bg-primary/90">
-                    Shop Now
+
+                  <Button className="px-8 py-2 text-lg font-semibold bg-red-500 text-white hover:bg-red-500/90">
+                    Add to Cart
+                    <ShoppingCart />
                   </Button>
                 </div>
               );

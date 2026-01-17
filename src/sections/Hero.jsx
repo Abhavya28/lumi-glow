@@ -12,9 +12,9 @@ const Hero = () => {
         <img
           src="/hero.jpeg"
           alt="Hydrating skincare hero background"
-          className="w-full h-full object-cover opacity-80"
+          className="w-full h-full object-cover opacity-90"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/30 to-background/50" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-background/5 to-background/40" />
       </div>
 
       {/* Content */}

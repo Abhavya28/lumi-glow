@@ -8,21 +8,25 @@ import Products from './sections/Products'
 import Testimonial from './sections/Testimonial'
 import EmailSubscription from './sections/EmailSubscription'
 import Footer from './layout/Footer'
+import Banner from './components/Banner'
+import SingleBanner from './components/SingleBanner'
 
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="bg-[#d4ecf2] min-h-screen">
+    <>
       <Navbar />
       <Hero />
+      <SingleBanner />
       <About />
+      <Banner />
       <Products />
-      <Testimonial />
+      {/* <Testimonial /> */}
       <EmailSubscription />
       <Footer />
-    </div>
+    </>
   )
 }
 
