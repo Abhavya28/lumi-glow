@@ -4,13 +4,6 @@ A modern, responsive skincare landing page built using React. Designed to showca
 
 ---
 
-## 🌸 Live Demo
-
-You can view the live website here  
-https://lumi-glow.vercel.app/
-
----
-
 ## 📸 Screenshots
 
 ### Home Page
@@ -21,6 +14,13 @@ https://lumi-glow.vercel.app/
 
 ### Testimonials View
 ![Testimonial Section](./screenshots/Testimonials.png)
+
+---
+
+## 🌸 Live Demo
+
+You can view the live website here  
+https://lumi-glow.vercel.app/
 
 ---
 
