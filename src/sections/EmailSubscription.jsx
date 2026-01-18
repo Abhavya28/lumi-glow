@@ -14,17 +14,17 @@ const EmailSubscription = () => {
     <section className="py-10">
       <div className="container mx-auto text-center pb-10">
         {/* Headline */}
-        <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-6 hover:text-primary-foreground/90">
+        <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-6 hover:text-primary-foreground/90 animate-fade-in">
           Get Exclusive Offers & Tips
         </h2>
-        <p className="text-slate-700 mb-8">
+        <p className="text-slate-700 mb-8 animate-fade-in">
           Subscribe to our newsletter to receive the latest skincare tips and special discounts
         </p>
 
         {/* Input + Button */}
         <form
           onSubmit={handleSubmit}
-          className="flex flex-col sm:flex-row justify-center items-center gap-4 max-w-md mx-auto"
+          className="flex flex-col sm:flex-row justify-center items-center gap-4 max-w-md mx-auto animate-fade-in"
         >
           <input
             type="email"

@@ -33,7 +33,7 @@ const About = () => {
     <section id="about" className="text-foreground bg-white">
       {/* Hero */}
       <div className="container mx-auto px-6 items-center flex flex-col">
-        <div className="space-y-4 animate-fade-in pb-10 flex flex-col items-center">
+        <div className="space-y-4 animate-fade-in  flex flex-col items-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground hover:text-primary-foreground/90">
             About LumiGlow
           </h1>

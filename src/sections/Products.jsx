@@ -46,7 +46,7 @@ const Products = () => {
 
   return (
     <section id="products" className="bg-white">
-      <div className="container mx-auto px-6 animate-fade-in flex flex-col items-center">
+      <div className="container mx-auto animate-fade-in flex flex-col items-center">
         <h2 className=""></h2>
         <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground text-center mb-12 hover:text-primary-foreground/90">
           Our Top Sellers

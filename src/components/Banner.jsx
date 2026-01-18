@@ -13,7 +13,7 @@ const Banner = () => {
   return (
     <div className="relative w-full h-[300px] overflow-hidden">
       {/* Diagonal Blue Banner */}
-      <div className="absolute w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rotate-3 bg-primary py-2">
+      <div className="absolute w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rotate-3 bg-primary">
         <div className="whitespace-nowrap animate-marquee inline-block">
           {[...scrollingText, ...scrollingText].map((item, index) => (
             <React.Fragment key={index}>
