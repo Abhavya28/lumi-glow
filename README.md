@@ -2,6 +2,33 @@
 
 A modern, responsive skincare landing page built using React. Designed to showcase brand identity, products, and clear call-to-actions(email subscription) with a clean UI and smooth user experience.
 
-## 🚧 Project Status
-**Currently under development.**  
-New sections, UI improvements, and optimizations are actively being addeed.
+---
+
+## 🌸 Live Demo
+
+You can view the live website here  
+https://lumi-glow.vercel.app/
+
+---
+
+## 📸 Screenshots
+
+### Home Page
+![Home Page](./screenshots/Home.png)
+
+### About Section
+![About Section](./screenshots/About.png)
+
+### Testimonials View
+![Testimonial Section](./screenshots/Testimonials.png)
+
+---
+
+## 🛠 Tech Stack
+
+1. React  
+2. Vite  
+3. Tailwind CSS 
+
+---
+
