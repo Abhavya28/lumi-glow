@@ -52,7 +52,7 @@ const Navbar = () => {
 
         {/* CTA Button */}
         <div className="hidden md:block">
-          <Button size="sm">
+          <Button size="sm" className="bg-white text-black hover:bg-white/90" >
             <User className="w-5 h-5"/>
             Login
           </Button>
@@ -82,7 +82,7 @@ const Navbar = () => {
               </a>
             ))}
 
-            <Button onClick={() => setisMobileMenuOpen(false)}>
+            <Button className="bg-white text-black hover:bg-white/90" onClick={() => setisMobileMenuOpen(false)}>
                 <User className="w-5 h-5"/>
                 Login
             </Button>
