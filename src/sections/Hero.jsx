@@ -12,15 +12,15 @@ const Hero = () => {
         <img
           src="/hero.jpeg"
           alt="Hydrating skincare hero background"
-          className="w-full h-full object-cover opacity-90"
+          className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-background/5 to-background/40" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/10 to-background/20" />
       </div>
 
       {/* Content */}
-      <div className="container mx-auto px-6 pt-80 pl-8 relative z-10">
-        <div className="flex flex-col space-y-6 animate-fade-in">
-          <h1 className="text-4xl md:text-4xl lg:text-4xl font-bold leading-tight text-primary-foreground">
+      <div className="container mx-auto px-6 pt-95 pl-8 relative z-10">
+        <div className="flex flex-col space-y-2 animate-fade-in">
+          <h1 className="text-4xl md:text-4xl lg:text-4xl font-bold leading-tight text-">
             <span className="block">Everyday rituals, </span>
             <span className="block">thoughtfully simplified</span>
           </h1>

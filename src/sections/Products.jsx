@@ -23,13 +23,13 @@ const featuredProducts = [
   },
   {
     id: 3,
-    name: "LumiGlow Gentle Cleanser",
+    name: "LumiGlow Fresh Gentle Cleanser",
     price: 399,
     image: "/products/cleanser.jpeg",
   },
   {
     id: 4,
-    name: "LumiGlow Revitalizing Eye Cream",
+    name: "LumiGlow Fresh Eye Cream",
     price: 599,
     image: "/products/eyecream.jpeg",
   },
@@ -47,6 +47,7 @@ const Products = () => {
   return (
     <section id="products" className="bg-white">
       <div className="container mx-auto px-6 animate-fade-in flex flex-col items-center">
+        <h2 className=""></h2>
         <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground text-center mb-12 hover:text-primary-foreground/90">
           Our Top Sellers
         </h2>
@@ -87,9 +88,9 @@ const Products = () => {
                     ₹{product.price}
                   </p>
 
-                  <Button className="px-8 py-2 text-lg font-semibold bg-red-500 text-white hover:bg-red-500/90">
+                  <Button className="px-8 py-2 text-lg font-semibold bg-red-500 text-white hover:bg-red-500/90" size="md">
                     Add to Cart
-                    <ShoppingCart />
+                    <ShoppingCart className="h-4 w-4"/>
                   </Button>
                 </div>
               );

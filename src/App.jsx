@@ -23,7 +23,7 @@ function App() {
       <About />
       <Banner />
       <Products />
-      {/* <Testimonial /> */}
+      <Testimonial />
       <EmailSubscription />
       <Footer />
     </>
